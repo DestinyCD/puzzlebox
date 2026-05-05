@@ -5,7 +5,6 @@ import type { User } from '../types';
 
 interface ArchivePageProps {
   onNavigate: (page: string) => void;
-  user: User | null;
 }
 
 type FilterValue = 'All' | 'Archived' | PuzzleType | 'Hard';
@@ -18,7 +17,7 @@ const DIFFICULTY_COLOR: Record<string, string> = {
   Hard:   'var(--red)',
 };
 
-export default function ArchivePage({ onNavigate, user }: ArchivePageProps) {
+export default function ArchivePage({ onNavigate }: ArchivePageProps) {
   const [activeFilter, setActiveFilter] = useState<FilterValue>('All');
 
   const activePuzzles  = getAllPuzzles();
