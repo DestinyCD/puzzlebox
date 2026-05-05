@@ -73,7 +73,7 @@ export default function App() {
       />
 
       {page === 'home'        && <HomePage        onNavigate={navigate} user={user} />}
-      {page === 'archive'     && <ArchivePage     onNavigate={navigate} user={user} />}
+      {page === 'archive'     && <ArchivePage     onNavigate={navigate} />}
       {page === 'leaderboard' && <LeaderboardPage user={user} />}
       {page === "managerpanel" && <ManagerPanel />}
       {page === 'wordle'      && (
