@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { getAllPuzzles, getArchivedPuzzles } from './PuzzleDatabase';
 import type { PuzzleType } from './PuzzleDatabase';
-import type { User } from '../types';
 
 interface ArchivePageProps {
   onNavigate: (page: string) => void;
